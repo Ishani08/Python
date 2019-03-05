@@ -11,7 +11,7 @@ class Stack:
         return self.a[len(self.a)-1]
 
 def infixToPrefix(s):
-    prec = {'/':3,'*':3,'+':2,'-':2,'^':4,'(':1}
+    prec = {'/':3,'*':3,'+':2,'-':2,'^':4,'(':1}                      
     opStack = Stack()
 
     prefixList = []
@@ -40,4 +40,4 @@ def infixToPrefix(s):
     prefixList = temp + prefixList
     return ''.join(prefixList)
 x=input()
-print (infixToPrefix(x))
+print (infixToPrefix(x))               #print after function call
